@@ -19,21 +19,40 @@ console.log(userAge, typeof userAge);
 //LOGIC
 
 // calculate price for km
-    let price = userKm * 0.21; // number
-    
-// if user age not < 18year and not > 65year
-    result = price;
+let price = userKm * 0.21; // number
+result = price;
 
-// calculate price for age
-    if(userAge < 18){
-        result = price * 0.8;
-    } else if(userAge > 65){
-        result = price * 0.6;
-    }
+
+
+// check age or km isNaN else apply discoutn by age
+if(isNaN(userAge) || isNaN(userKm)){
+    result = "Hai inserito i dati in modo non corretto";
+} else if(userAge < 18 && userAge <=65){   
+    price = price * 0.8;
+
     // fixed 2 number after ,
-    result = result.toFixed(2);
+    price = price.toFixed(2);
+    result = `il costo del tuo biglietto per percorrere ${userKm}km in base ai tuoi anni è di ${price}€`; 
+} else{
+    price = price * 0.6;
+    
+    // fixed 2 number after ,
+    price = price.toFixed(2);
+    result = `il costo del tuo biglietto per percorrere ${userKm}km in base ai tuoi anni è di ${price}€`;
+}
 
-    // OUTPUT
 
-    // print to video result
-    document.getElementById("result").innerHTML =`il costo del tuo biglietto per percorrere ${userKm}km in base ai tuoi anni è di ${result}€`;
+// OUTPUT
+
+// print to video result
+document.getElementById("result").innerHTML = result;
+
+
+
+
+
+
+
+
+
+
