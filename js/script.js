@@ -44,8 +44,6 @@ else{
 
 // OUTPUT
 
-
-
 // print to video result
 document.getElementById("result").innerHTML = result;
 
