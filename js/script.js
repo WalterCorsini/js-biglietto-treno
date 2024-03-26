@@ -29,18 +29,16 @@ if(isNaN(userAge) || isNaN(userKm)){
     price = price * 0.8;
 
     // fixed 2 number after ,
-    price = price.toFixed(2);
-    result = `il costo del tuo biglietto per percorrere ${userKm} km in base ai tuoi anni è di ${price}€`; 
+    result = `il costo del tuo biglietto per percorrere ${userKm} km in base ai tuoi anni è di ${price.toFixed(2)}€`; 
 } else if(userAge > 65){
     price = price * 0.6;
 
     // fixed 2 number after ,
-    price = price.toFixed(2);
-    result = `il costo del tuo biglietto per percorrere${userKm} km in base ai tuoi anni è di ${price}€`; 
+    result = `il costo del tuo biglietto per percorrere${userKm} km in base ai tuoi anni è di ${price.toFixed(2)}€`; 
 }
 else{
     result = `il costo del tuo biglietto per percorrere ${userKm} km in base ai tuoi anni è di ${price}€`; 
-    }
+}
 
 // OUTPUT
 
