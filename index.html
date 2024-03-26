@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBI Treni Boolean Italia</title>
 </head>
+
 <body>
-    <h2 id="result"></h2>
+    <div>
+        <!-- input km -->
+        <div>
+            <label for="user-km">Chilometri da percorrere</label>
+            <input id="user-km" type="number" min="10" value="10">
+        </div>
+        <!-- /input km -->
+
+        <!-- input age -->
+        <div>
+            <label for="user-age">Età passeggero</label>
+            <input id="user-age" type="number" min="0" value="0" >
+        </div>
+        <!-- /input age -->
+
+        <!--send button -->
+        <button id="send-btn">Invia</button>
+    </div>
+
+    <div id="result">
+
+    </div>
+
     <script src="./js/script.js"></script>
 </body>
+
 </html>
