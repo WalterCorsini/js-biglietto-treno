@@ -1,5 +1,7 @@
 // 1. find button on page
 const sendBtnElem = document.getElementById("send-btn"); // object | null
+const resetBtnElem = document.getElementById("reset-btn"); // object | null
+
 
 let userKm;
 let userAge;
@@ -16,6 +18,13 @@ sendBtnElem.addEventListener("click", function(){
     // console.log(userKm, typeof userKm);
     let userAge = parseInt(document.getElementById("user-age").value); //number
     // console.log(userAge, typeof userAge);
+
+// button reset
+resetBtnElem.addEventListener("click", function(){
+    document.getElementById("user-km").value="10";
+    document.getElementById("user-age").value="0";
+    document.getElementById("user-name").value="";
+});
 
 // LOGIC
 

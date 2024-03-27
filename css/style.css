@@ -29,13 +29,14 @@ span{
 
 input{
     border-radius: 20px;
-    border: 1px solid rgb(167, 150, 245);
-    padding: 4px;
+    border: 1px solid rgb(0, 21, 51);
     margin-left: 5px;
 }
 
 button{
     border-radius: 20px;
+    font-size: 16px;
+    padding: 5px 10px;
     border: 0;
     border-bottom:2px solid gray;
     color:white;
